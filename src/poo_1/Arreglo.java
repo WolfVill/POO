@@ -13,19 +13,32 @@ public class Arreglo
 {
    public static void main(String[] args) 
    {  
-    Scanner sc = new Scanner(System.in); 
-    int n;
-    int numero[];
-    
-    System.out.print(" Ingrese la cantidad de numeros: ");
-    n=sc.nextInt();
-    
-    for(int i=0; i<n; i++)
+    Scanner scan = new Scanner(System.in);
+    int cant,numAux,i,j;
+    System.out.print("Ingrese la cantidad de números: ");
+    cant = scan.nextInt();
+    int[] numeros = new int[cant + 1];
+    for(i = 1; i <= cant; i++)
     {
-      numero=new int [n];
-      System.out.print(" Ingrese el numero: ");
-      numero[i]=sc.nextInt();
+      System.out.print("Ingrese el numero (" + i + ") : ");
+      numeros[i] = scan.nextInt();
     }
-    System.out.println();
-   }
-}
+    for(i = 1; i <= cant; i++)
+    {
+      for(j = i; j <= cant; j++)
+    {
+    if(numeros[i] < numeros[j])
+    {
+      numAux = numeros[i];
+      numeros[i] = numeros[j];
+      numeros[j] = numAux;
+    }
+    }
+    }
+    System.out.println("\nLos números de mayor a menor son:");
+    for(i = 1; i <= cant; i++)
+      {
+        System.out.println(numeros[i]);
+      }
+   }    
+  }
