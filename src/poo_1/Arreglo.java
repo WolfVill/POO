@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Parcial1;
+package poo_1;
 import java.util.Scanner;
 /**
  *
@@ -14,27 +14,18 @@ public class Arreglo
    public static void main(String[] args) 
    {  
     Scanner sc = new Scanner(System.in); 
+    int n;
+    int numero[];
     
-    int [] a  = {7,2,4,8,3,9,1,5,10,6};
-    int menor;
-    int n; 
+    System.out.print(" Ingrese la cantidad de numeros: ");
+    n=sc.nextInt();
     
-    for(int i = 0; i < 10; i++)
+    for(int i=0; i<n; i++)
     {
-        menor = a[0];
-
-        if (a[i] < menor)
-        {
-            menor = a[i];
-        }
-        else
-        {
-            if (a[i] > menor)
-            {
-              menor = menor;
-            }      
-        }
+      numero=new int [n];
+      System.out.print(" Ingrese el numero: ");
+      numero[i]=sc.nextInt();
     }
-    //System.out.println(Arrays.toString(a));
+    System.out.println();
    }
 }

@@ -1,4 +1,4 @@
-package Parcial1;
+package poo_1;
 
 import java.util.Scanner;
 
