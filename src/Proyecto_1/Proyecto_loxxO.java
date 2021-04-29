@@ -68,22 +68,22 @@ public class Proyecto_loxxO
                     direccion = sc.nextLine();
                     posicion[i][4]=direccion;
                     
-                    do
-                    {
-                        try
-                        {
+                    //do
+                    //{
+                        //try
+                        //{
                             System.out.print("Introduce el Edad: ");
                             posicion[i][5] = (sc.nextLine());
-                            edad = Integer.parseInt(sc.nextLine());
-                            valido=true;
-                        }
-                        catch(Exception e)
-                        {
-                            System.out.print("Edad no valida: ");
-                            valido = false;
-                        }
-                    }
-                    while(valido == false);
+                            //edad = Integer.parseInt(sc.nextLine());
+                            //valido=true;
+                        //}
+                        //catch(Exception e)
+                        //{
+                            //System.out.print("Edad no valida: ");
+                            //valido = false;
+                        //}
+                    //}
+                    //while(valido == false);
                     
                 case 2:
                     //Mostrar clientes 
