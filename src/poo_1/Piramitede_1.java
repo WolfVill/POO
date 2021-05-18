@@ -24,4 +24,8 @@ public class Piramitede_1
             System.out.println();
         }
      }
+     
+     public void casa()
+     {
+     }
 }
